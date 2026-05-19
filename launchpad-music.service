@@ -1,0 +1,17 @@
+[Unit]
+Description=Launchpad Music Server
+After=network.target
+Wants=graphical.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/launchpad-music
+ExecStart=/usr/bin/node /home/pi/launchpad-music/server.js
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

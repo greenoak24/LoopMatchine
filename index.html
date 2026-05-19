@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Launchpad Mini Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="transport" aria-label="Transport Controls">
+        <button id="transportPlay" class="transport-button transport-button-primary" type="button">Play</button>
+        <button id="transportStop" class="transport-button" type="button">Stop</button>
+        <button id="midiConnect" class="transport-button" type="button">MIDI</button>
+
+        <label class="transport-field" for="transportBpm">
+          <span>BPM</span>
+          <input id="transportBpm" type="range" min="80" max="160" value="128" />
+          <strong><output id="transportBpmValue">128</output></strong>
+        </label>
+
+        <label class="transport-field" for="transportQuantize">
+          <span>Quantize</span>
+          <select id="transportQuantize">
+            <option value="1">1/2</option>
+            <option value="2">1 Beat</option>
+            <option value="4" selected>1 Bar</option>
+          </select>
+        </label>
+
+        <p class="transport-status" id="transportStatus">Sync: stopped</p>
+      </section>
+
+      <section class="launchpad" aria-label="Launchpad Mini MK2">
+        <div class="top-row" id="topRow" aria-label="Top Buttons"></div>
+        <button class="logo-button" type="button" aria-label="Session Button">S</button>
+
+        <div class="grid" id="mainGrid" aria-label="8x8 Grid"></div>
+        <div class="side-row" id="sideRow" aria-label="Right Buttons"></div>
+      </section>
+    </main>
+
+    <template id="topTemplate">
+      <button class="button top-button" type="button"></button>
+    </template>
+
+    <template id="gridTemplate">
+      <button class="button grid-button" type="button"></button>
+    </template>
+
+    <template id="sideTemplate">
+      <button class="button side-button" type="button"></button>
+    </template>
+
+    <script src="sample-banks.js?v=20260518-surface1"></script>
+    <script src="sample-metadata.js?v=20260518-surface1"></script>
+    <script src="script.js?v=20260518-surface1"></script>
+  </body>
+</html>

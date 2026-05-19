@@ -1,0 +1,25 @@
+{
+  "name": "launchpad-music",
+  "version": "1.0.0",
+  "description": "Browser-based Launchpad-style groovebox with sample playback and BPM sync",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "analyze:samples": "node scripts/analyze-samples.js",
+    "test": "node --check script.js && node --check sample-banks.js && node --check sample-metadata.js && node --check scripts/analyze-samples.js"
+  },
+  "keywords": [
+    "launchpad",
+    "groovebox",
+    "daw",
+    "music",
+    "web-audio"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {}
+}
