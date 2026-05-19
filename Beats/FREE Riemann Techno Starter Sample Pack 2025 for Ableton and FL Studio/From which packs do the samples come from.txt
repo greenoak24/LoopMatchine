@@ -1,0 +1,20 @@
+
+Here are a few examples from which packs we took the samples:
+
+RK_AT4 = Riemann Acid Techno 4
+RK_MT3 = Riemann Modular Techno 3
+RK_BT8 = Riemann Berlin Techno 8
+RK_MG2 = Riemann Modern Grooves 2
+RK_HG = Riemann Hard Groove Techno
+RK_TRIBAL = Riemann Tribal Techno
+RK_HT = Riemann Hard Techno
+RK_DT = Riemann Deep Techno
+RK_DD = Riemann Deep Detroit Grooves
+RK_IT = Riemann Industrial Techno
+RK_DUBT = Riemann Dub Techno
+RK_FMG = Riemann Fast Minimal Grooves
+RK_DM = Riemann Dark Melodic Techno
+RK_MS = Riemann Melodic Synths
+
+
+www.riemannkollektion.com
